@@ -41,7 +41,7 @@ export class TnsSideDrawerCommonClass {
 	build(opts: TnsSideDrawerOptions): boolean {
 		if (TnsSideDrawerCommonClass.isBuilt == true) {
 			console.warn('TnsSideDrawer.isBuilt == true\nyouve already built a sidedrawer')
-			return true
+			return false
 		}
 		TnsSideDrawerCommonClass.isBuilt = true
 
