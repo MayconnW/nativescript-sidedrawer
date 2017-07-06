@@ -38,6 +38,10 @@ export class TnsSideDrawerCommonClass {
 	protected listener: TnsSideDrawerOptionsListener
 	protected context: any
 
+	forceBuildForNextRequest(){
+		TnsSideDrawerCommonClass.isBuilt = false;
+	}
+
 	build(opts: TnsSideDrawerOptions): boolean {
 		if (TnsSideDrawerCommonClass.isBuilt == true) {
 			console.warn('TnsSideDrawer.isBuilt == true\nyouve already built a sidedrawer')
