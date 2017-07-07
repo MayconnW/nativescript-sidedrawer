@@ -29,4 +29,5 @@ export declare class TnsSideDrawerCommonClass {
     protected listener: TnsSideDrawerOptionsListener;
     protected context: any;
     build(opts: TnsSideDrawerOptions): boolean;
+    forceBuildForNextRequest();
 }
